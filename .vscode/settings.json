@@ -1,0 +1,6 @@
+{
+	"editor.renderWhitespace": "boundary",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"files.autoSave": "onFocusChange"
+}
