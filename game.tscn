@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://t2m1qjncobdt"]
+[gd_scene load_steps=6 format=3 uid="uid://t2m1qjncobdt"]
 
 [ext_resource type="Texture2D" uid="uid://ekog6cbv0f3t" path="res://world_tileset.png" id="1_mbxvt"]
 
@@ -136,6 +136,16 @@ texture = ExtResource("1_mbxvt")
 sources/0 = SubResource("TileSetAtlasSource_0c0vm")
 
 [sub_resource type="Curve2D" id="Curve2D_4lj31"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -562, 47, 0, 0, 0, 0, -338, 46, 0, 0, 0, 0, -312, 19, 0, 0, 0, 0, -184, 19, 0, 0, 0, 0, -98, 70, 0, 0, 0, 0, -7, 47, 0, 0, 0, 0, 39, 46, 0, 0, 0, 0, 151, 71, 0, 0, 0, 0, 268, 40, 0, 0, 0, 0, 439, 1, 0, 0, 0, 0, 466, -119, 0, 0, 0, 0, 481, -316)
+}
+point_count = 12
+
+[sub_resource type="Curve2D" id="Curve2D_hg3wf"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 10, 521, 0, 0, 0, 0, 13.6364, 377.954, 0, 0, 0, 0, 7.27273, 203.241, 0, 0, 0, 0, 2.72727, 137.724, 0, 0, 0, 0, 44.5455, 119.161, 0, 0, 0, 0, 43.6364, 68.931, 0, 0, 0, 0, -11.8182, 66.7471, 0, 0, 0, 0, -25.4545, 72.2069, 0, 0, 0, 0, -27.2727, 133.356, 0, 0, 0, 0, 2.72727, 137.724, 0, 0, 0, 0, 44.5455, 119.161, 0, 0, 0, 0, 43.6364, 68.931, 0, 0, 0, 0, 11.8182, 42.7241, 0, 0, 0, 0, 10, -53.3678, 0, 0, 0, 0, 50.9091, -52.2759, 0, 0, 0, 0, 52.7273, -107.966, 0, 0, 0, 0, -1.81818, -107.966, 0, 0, 0, 0, -7.27273, -52.2759, 0, 0, 0, 0, 10, -53.3678, 0, 0, 0, 0, 50.9091, -52.2759, 0, 0, 0, 0, 52.7273, -107.966, 0, 0, 0, 0, -1.81818, -173.483, 0, 0, 0, 0, -1.81818, -396.241, 0, 0, 0, 0, 155.455, -397.333, 0, 0, 0, 0, 404.545, -396.241)
+}
+point_count = 25
 
 [node name="TileMap" type="TileMap"]
 tile_set = SubResource("TileSet_35fv5")
@@ -147,7 +157,18 @@ layer_1/tile_data = PackedInt32Array(-917530, 0, 4, -851994, 0, 4, -786458, 0, 4
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="Path2D" type="Path2D" parent="."]
+[node name="Land" type="Path2D" parent="."]
 curve = SubResource("Curve2D_4lj31")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+[node name="PathFollow2D" type="PathFollow2D" parent="Land"]
+position = Vector2(-562, 47)
+rotation = -0.00446426
+
+[node name="Water" type="Path2D" parent="."]
+position = Vector2(-2, 43.8737)
+scale = Vector2(1.1, 0.915789)
+curve = SubResource("Curve2D_hg3wf")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Water"]
+position = Vector2(10, 521)
+rotation = -1.54538
