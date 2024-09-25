@@ -1,5 +1,5 @@
 extends OptionButton
-func _on_option_button_item_selected(index:0):
+func _on_option_button_item_selected(index:0)
 	pass # Replace with function body.
 
 
