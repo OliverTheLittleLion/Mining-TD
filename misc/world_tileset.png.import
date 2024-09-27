@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g8ycyxjv5ex1"
-path="res://.godot/imported/crazed cat back.png-3fe45bd7667c3af8f27ee87af1dd30e7.ctex"
+uid="uid://ekog6cbv0f3t"
+path="res://.godot/imported/world_tileset.png-fc4daf6dedd4675ffa200839ac53c08a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CRAZED/crazed cat back.png"
-dest_files=["res://.godot/imported/crazed cat back.png-3fe45bd7667c3af8f27ee87af1dd30e7.ctex"]
+source_file="res://misc/world_tileset.png"
+dest_files=["res://.godot/imported/world_tileset.png-fc4daf6dedd4675ffa200839ac53c08a.ctex"]
 
 [params]
 

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddm6y6khyjok"]
+
+[ext_resource type="Texture2D" uid="uid://c3shok1rgh4dv" path="res://misc/FEESH.png" id="1_jjcsr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1u6dh"]
+atlas = ExtResource("1_jjcsr")
+region = Rect2(129, 0, 43, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0vmh"]
+atlas = ExtResource("1_jjcsr")
+region = Rect2(172, 0, 43, 97)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2j5tk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1u6dh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0vmh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_2j5tk")
+autoplay = "default"
+frame_progress = 0.351313

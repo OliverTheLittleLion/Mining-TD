@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4sn5mpg65she"
-path="res://.godot/imported/crazed fish R.png-45746385ee595ca4c964adfdea070b28.ctex"
+uid="uid://c3shok1rgh4dv"
+path="res://.godot/imported/FEESH.png-8507e1b7a502cd6b8dfc691b9d7eb48b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CRAZED/crazed fish R.png"
-dest_files=["res://.godot/imported/crazed fish R.png-45746385ee595ca4c964adfdea070b28.ctex"]
+source_file="res://misc/FEESH.png"
+dest_files=["res://.godot/imported/FEESH.png-8507e1b7a502cd6b8dfc691b9d7eb48b.ctex"]
 
 [params]
 
