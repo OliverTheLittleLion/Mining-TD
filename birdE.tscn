@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqvvio5wotu7w"]
+
+[ext_resource type="Texture2D" uid="uid://co3dfqw473grx" path="res://birbSHEET.png" id="1_dcjnn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gihpt"]
+atlas = ExtResource("1_dcjnn")
+region = Rect2(156, 0, 156, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_788nm"]
+atlas = ExtResource("1_dcjnn")
+region = Rect2(312, 0, 156, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cpska"]
+atlas = ExtResource("1_dcjnn")
+region = Rect2(468, 0, 156, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ti0kw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gihpt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_788nm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cpska")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="bird" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ti0kw")
+autoplay = "default"
+frame = 2
+frame_progress = 1.0

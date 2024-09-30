@@ -24,7 +24,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+[node name="fish" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_2j5tk")
 autoplay = "default"
 frame_progress = 0.351313

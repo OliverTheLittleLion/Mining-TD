@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://t2m1qjncobdt"]
+[gd_scene load_steps=10 format=3 uid="uid://t2m1qjncobdt"]
 
 [ext_resource type="Texture2D" uid="uid://ekog6cbv0f3t" path="res://misc/world_tileset.png" id="1_xicmi"]
 [ext_resource type="PackedScene" uid="uid://ddm6y6khyjok" path="res://fishE.tscn" id="2_12c2v"]
+[ext_resource type="Script" path="res://waterPath.gd" id="2_o4aji"]
+[ext_resource type="PackedScene" uid="uid://dhnr0425vwxnu" path="res://dEEr.tscn" id="2_w0nu8"]
+[ext_resource type="PackedScene" uid="uid://cqvvio5wotu7w" path="res://birdE.tscn" id="3_tfqla"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0c0vm"]
 texture = ExtResource("1_xicmi")
@@ -165,6 +168,16 @@ curve = SubResource("Curve2D_4lj31")
 position = Vector2(-562, 47)
 rotation = -0.00446426
 
+[node name="deer" parent="Land/PathFollow2D" instance=ExtResource("2_w0nu8")]
+position = Vector2(35.0086, -1.84373)
+rotation = 0.00446426
+scale = Vector2(0.403226, 0.479021)
+
+[node name="bird" parent="Land/PathFollow2D" instance=ExtResource("3_tfqla")]
+position = Vector2(87.4024, 3.45086)
+rotation = 0.00446426
+scale = Vector2(0.435897, 0.375)
+
 [node name="Water" type="Path2D" parent="."]
 position = Vector2(-2, 43.8737)
 scale = Vector2(1.1, 0.915789)
@@ -173,8 +186,14 @@ curve = SubResource("Curve2D_hg3wf")
 [node name="PathFollow2D" type="PathFollow2D" parent="Water"]
 position = Vector2(4.54545, 308.069)
 rotation = -1.54479
+script = ExtResource("2_o4aji")
 
-[node name="AnimatedSprite2D" parent="Water/PathFollow2D" instance=ExtResource("2_12c2v")]
+[node name="fish" parent="Water/PathFollow2D" instance=ExtResource("2_12c2v")]
 position = Vector2(27.3841, 2.92515)
 rotation = 1.54479
 scale = Vector2(0.909091, 1.09195)
+
+[node name="bird" parent="Water/PathFollow2D" instance=ExtResource("3_tfqla")]
+position = Vector2(16.4209, 1.39159)
+scale = Vector2(0.396272, 0.40948)
+skew = -0.00164557

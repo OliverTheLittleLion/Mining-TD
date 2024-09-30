@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dhnr0425vwxnu"]
+
+[ext_resource type="Texture2D" uid="uid://dfnowqpdgoxd1" path="res://DEERsheet.png" id="1_om7ob"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mp6g8"]
+atlas = ExtResource("1_om7ob")
+region = Rect2(0, 0, 186, 143)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lscqx"]
+atlas = ExtResource("1_om7ob")
+region = Rect2(0, 154, 165, 139)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j04d5"]
+atlas = ExtResource("1_om7ob")
+region = Rect2(0, 302, 186, 143)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d3xxl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mp6g8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lscqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j04d5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="deer" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_d3xxl")
+autoplay = "default"
+frame_progress = 0.710597
