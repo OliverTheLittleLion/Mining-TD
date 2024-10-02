@@ -1,11 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://cnnknudl26qmi"]
 
-[ext_resource type="Texture2D" uid="uid://ekog6cbv0f3t" path="res://misc/world_tileset.png" id="1_k131r"]
-[ext_resource type="Script" path="res://gdscripts/Selector.gd" id="2_i76of"]
-[ext_resource type="Script" path="res://gdscripts/Diffultity.gd" id="3_qs7qt"]
+[ext_resource type="Texture2D" uid="uid://ekog6cbv0f3t" path="res://misc/world_tileset.png" id="1_kjumt"]
+[ext_resource type="Script" path="res://gdscripts/Selector.gd" id="2_ej7fu"]
+[ext_resource type="Script" path="res://gdscripts/Diffultity.gd" id="3_mcdjl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ga8jr"]
-texture = ExtResource("1_k131r")
+texture = ExtResource("1_kjumt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -159,7 +159,7 @@ offset_top = 44.0
 offset_right = 169.0
 offset_bottom = 108.0
 text = "Select Difficulty (Cannot be changed latter)"
-script = ExtResource("2_i76of")
+script = ExtResource("2_ej7fu")
 
 [node name="OptionButton" type="OptionButton" parent="."]
 layout_mode = 0
@@ -179,7 +179,7 @@ popup/item_3/text = "Hard"
 popup/item_3/id = 3
 popup/item_4/text = "Super Hard"
 popup/item_4/id = 4
-script = ExtResource("3_qs7qt")
+script = ExtResource("3_mcdjl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 

@@ -1,7 +1,7 @@
 extends OptionButton
 
 # Diffulty settings
-enum Difficulty{	
+enum Difficulty {
 	SUPEREASY,
 	EASY,
 	NORMAL,
@@ -9,8 +9,9 @@ enum Difficulty{
 	SUPERHARD
 }
 func _ready():
-	$OptionButton.select(Difficulty)
-	set_diffiulty(Difficulty)
+	select(Difficulty.NORMAL)
+	set_difficulty(Difficulty.NORMAL)
+
 # deer base stats
 var deerHealth = 100
 var deerSpeed = 50
@@ -26,7 +27,7 @@ var birdSpeed = 100
 # difficulty selector
 func set_difficulty(selected_difficulty):
 	var difficulty = selected_difficulty
-    
+	
 	match difficulty:
 		# Super Easy
 		Difficulty.SUPEREASY:
@@ -34,6 +35,8 @@ func set_difficulty(selected_difficulty):
 			deerSpeed / 4
 			fishHealth / 4
 			fishSpeed / 4
+			birdHealth / 4
+			birdSpeed / 4 
 
 		# Easy
 		Difficulty.EASY:
@@ -41,13 +44,16 @@ func set_difficulty(selected_difficulty):
 			deerSpeed / 2
 			fishHealth / 2
 			fishSpeed / 2
-
+			birdHealth / 2
+			birdSpeed / 2
 		# Normal
 		Difficulty.NORMAL:
 			deerHealth * 1
 			deerSpeed * 1
 			fishHealth * 1
 			fishSpeed * 1
+			birdHealth * 1
+			birdSpeed * 1
 		
 		# Hard
 		Difficulty.HARD:
@@ -55,6 +61,8 @@ func set_difficulty(selected_difficulty):
 			deerSpeed * 2
 			fishHealth * 2
 			fishSpeed * 2
+			birdHealth * 2
+			birdSpeed * 2
 
 		# Super Hard
 		Difficulty.SUPERHARD:
@@ -62,8 +70,5 @@ func set_difficulty(selected_difficulty):
 			deerSpeed * 4
 			fishHealth * 4
 			fishSpeed * 4
-
-
-
-
-
+			birdHealth * 4
+			birdSpeed * 4
