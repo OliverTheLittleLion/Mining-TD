@@ -1,0 +1,20 @@
+Points:
+5/5 points - add fchsLemke as an admin on your repo and submit a link to this Canvas assignment
+5/5 points - your project launches without any errors
+3/10 points - use inheritance to include at least three types of meaningfully different enemies that come in waves
+-you added some enemy types, but I don't see any code that makes them progress through the level or be different other than their sprites
+0/10 points - use inheritance to include at least three types of meaningfully different towers that require some kind of resource to place
+-I don't see any towers
+4/10 points - enemies follow a path and if not destroyed, will cause the player to lose the game
+-I see the paths, but the enemies don't follow them yet
+0/10 points - README.md file is updated with reflections on changes/features you made and PEOPLE.txt is updated to include anywhere you pulled assets/resources from
+-No readme or people.txt that I can see
+5/10 points - you use pull requests to add major features to your project
+-No pull requests, but looks like you used good names for your commits
+
+22/60
+
+Bonus Points:
+10 points - you add the ability to upgrade your towers
+10 points - enemies are smarter and can follow different paths based on where you place your towers
+10 points - artistic polish (your game is beautiful and feels like a final project with features like a title screen, audio elements, and a cohesive aesthetic). These are not just 10 free points, you need to actually impress me with how your game feels and include your specific efforts and decisions in your README.
